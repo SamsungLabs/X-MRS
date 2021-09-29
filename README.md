@@ -2,10 +2,13 @@
 
 # Cross-modal Retrieval and Synthesis (X-MRS): Closing the modality gap in shared representation learning
 
+
+
 This project provides the code associated with the paper:
 
 *"Ricardo Guerrero, Hai Pham Xuan, and Vladimir Pavlovic. Cross-modal Retrieval and Synthesis (X-MRS): Closing the modality gap in shared representation learning. ACM Multimedia 2021."*
 
+![Alt text](images/diagram.png?raw=true "Title")
 
 #
 ## Installation
@@ -49,6 +52,8 @@ Run  `python test.py --model_init_path=<path-to-project>/tensorboard/<timestamp>
 Results are printed on screen.
 
 
+![Alt text](images/retrievals.png?raw=true "Title")
+
 #
 ## Train synthesis:
 First train ecoders and store embeddings, i.e. run `python test.py --model_init_path=<path-to-project>/tensorboard/<timestamp>/models/<model>.pth.tar`, this will create the necesary pre-calculated embedding files as well as extract the image encoder part from FoodSpaceNet. Each data split will have its own corresponding embedding file. Note that test.py needs to run through all data splits. Then to train synthesis
@@ -63,6 +68,21 @@ where [IMAGE_DIR] and [DATA_DIR] are the same as in training the retrieval model
 ## Test synthesis
 
 `python GAN_test.py --img_path [IMAGE_DIR] --data_path [DATA_DIR] --encoder_dir [ENCODER_PATH] -trained_G_model_path [PATH_TO_GENERATOR_MODEL]`
+
+#
+## Citation
+If you find this repository useful in your research, please cite:
+
+```latex
+@article{guerrero2021,
+    title={Cross-modal Retrieval and Synthesis (X-MRS): Closing the modality gap in shared representation learning},
+    author={Guerrero, Ricardo and Xuan, Hai Pham and Pavlovic,
+    Vladimir},
+	booktitle={Proceedings of ACM international conference on Multimedia},
+	year={2021}
+}
+```
+
 
 #
 ## NOTES
