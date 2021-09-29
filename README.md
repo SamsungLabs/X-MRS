@@ -51,7 +51,7 @@ Run  `python test.py --model_init_path=<path-to-project>/tensorboard/<timestamp>
 
 Results are printed on screen.
 
-
+Below, qualitative retrieval examples. From left to right, query and top-3 retrievals. Notice that attention over recipes primarily focuses on ingredients and words that help describe the visual appearance of retrieved samples.
 ![Alt text](images/retrievals.png?raw=true "Title")
 
 #
@@ -68,6 +68,13 @@ where [IMAGE_DIR] and [DATA_DIR] are the same as in training the retrieval model
 ## Test synthesis
 
 `python GAN_test.py --img_path [IMAGE_DIR] --data_path [DATA_DIR] --encoder_dir [ENCODER_PATH] -trained_G_model_path [PATH_TO_GENERATOR_MODEL]`
+
+Below, a visualization of some image synthesis from recipe and image embeddings. For each input recipe/image, the first row shows synthetic images created from recipe embedding, while the second row shows images generated from image embedding
+![Alt text](images/synthesis.png?raw=true "Title")
+
+#
+## License
+See the [LICENSE](LICENSE) file for more details.
 
 #
 ## Citation
