@@ -4,9 +4,8 @@
 
 
 
-This project provides the code associated with the paper:
-
-*"Ricardo Guerrero, Hai Pham Xuan, and Vladimir Pavlovic. Cross-modal Retrieval and Synthesis (X-MRS): Closing the modality gap in shared representation learning. ACM Multimedia 2021."*
+This project provides the code associated with the paper
+[Cross-modal Retrieval and Synthesis (X-MRS): Closing the modality gap in shared representation learning](https://arxiv.org/abs/2012.01345).
 
 ![Alt text](images/diagram.png?raw=true "Title")
 
@@ -83,10 +82,9 @@ If you find this repository useful in your research, please cite:
 ```latex
 @article{guerrero2021,
     title={Cross-modal Retrieval and Synthesis (X-MRS): Closing the modality gap in shared representation learning},
-    author={Guerrero, Ricardo and Xuan, Hai Pham and Pavlovic,
-    Vladimir},
-	booktitle={Proceedings of ACM international conference on Multimedia},
-	year={2021}
+    author={Guerrero, Ricardo and Xuan, Hai Pham and Pavlovic Vladimir},
+    booktitle={Proceedings of ACM international conference on Multimedia},
+    year={2021}
 }
 ```
 
