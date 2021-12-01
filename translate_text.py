@@ -8,7 +8,8 @@ import torch.nn.parallel
 from tqdm import *
 
 ORIGINAL_DATA_PATH = 'data/Recipe1M'
-language = sys.argv[1]
+# language = sys.argv[1]
+language = 'de'
 
 
 ######### DATALOADER #########
