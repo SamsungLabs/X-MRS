@@ -31,7 +31,7 @@ class SubsetSequentialSampler(Sampler):
 
 
 class PadToSquareResize(object):
-    def __init__(self, resize=None, fill=0, padding_mode='constant', interpolation=Image.BILINEAR):
+    def __init__(self, resize=None, fill=0, padding_mode='constant', interpolation=transforms.InterpolationMode.BILINEAR):
         assert isinstance(fill, (numbers.Number, str, tuple))
         assert padding_mode in ['constant', 'edge', 'reflect', 'symmetric', 'random']
 
